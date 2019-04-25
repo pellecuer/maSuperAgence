@@ -36,9 +36,6 @@ class PropertyController extends abstractController
 
     public function index(): Response
     {
-        $property = $this->repository->findAllVisible();
-
-
         return $this->render('property/index.html.twig', [
             'current_menu' => 'properties'
         ]);
